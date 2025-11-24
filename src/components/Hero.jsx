@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { selectPersonalInfo } from '../features/profile/profileSlice';
 import { Download } from 'lucide-react';
 
+import resumePdf from '../assets/NeeraliJadav-Resume.pdf';
+
 const Hero = () => {
     const { name, title, bio, quotes, heroTags } = useSelector(selectPersonalInfo);
     const [currentQuote, setCurrentQuote] = useState("");
@@ -80,7 +82,7 @@ const Hero = () => {
 
                     <div>
                         <a
-                            href="/NeeraliJadav-Resume.pdf"
+                            href={resumePdf}
                             download="NeeraliJadav-Resume.pdf"
                             className="btn btn-primary"
                             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}

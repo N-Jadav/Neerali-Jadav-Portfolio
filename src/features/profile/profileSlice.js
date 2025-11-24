@@ -57,7 +57,7 @@ const initialState = {
             id: 1,
             role: "Senior Software Developer",
             company: "Pluralsight",
-            period: "Feb, 2025 - Present",
+            period: "Feb 2025 - Present",
             description: "Led high-impact projects by aligning team strengths, accelerating delivery, and driving clear communication with leadership. Engineered large-scale data migration using Kafka and Node.js for fast, reliable processing of massive datasets.",
             technologies: ["Javascript", "Node.js", "TypeScript", "Kafka", "Jest"]
         },
@@ -65,7 +65,7 @@ const initialState = {
             id: 2,
             role: "Senior Full Stack Developer",
             company: "ThoughtsWin Systems",
-            period: "Aug, 2023 - Nov, 2024",
+            period: "Aug 2023 - Nov 2024",
             description: "Developed dynamic dashboards and automated data analysis tools that boosted stakeholder decision-making and increased productivity by 34%. Streamlined complex data-migration workflows with custom transformation logic, significantly reducing manual effort and accelerating report delivery.",
             technologies: ["React.js", "Node.js", "PostgreSQL", "AWS",]
         },
@@ -73,7 +73,7 @@ const initialState = {
             id: 3,
             role: "Software Developer",
             company: "SHJ International",
-            period: "Nov, 2020 - Dec, 2022",
+            period: "Nov 2020 - Dec 2022",
             description: "Architected and deployed a cutting-edge truck tracking and route planning platform that directly achieved a 20% increase in operational efficiency and minimized delivery times. Engineered advanced optimization algorithms to maximize load distribution, enhancing resource utilization by 12%.",
             technologies: ["Typescript", "Express.js", "Angular", "Javascript"]
         },
@@ -81,7 +81,7 @@ const initialState = {
             id: 4,
             role: "Software Developer",
             company: "Actonate IT Solutions",
-            period: "Jul, 2018 - Nov, 2020",
+            period: "Jul 2018 - Nov 2020",
             description: "Launched a full-featured online medical consultation platform (appointment booking, chat, image uploads) that rapidly onboarded 120 doctors and served hundreds of patients daily within the first week of release.",
             technologies: ["React.js", "Node.js", "Typescript", "Elasticsearch"]
         }

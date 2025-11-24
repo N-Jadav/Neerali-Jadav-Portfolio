@@ -6,6 +6,40 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
     const experience = useSelector(selectExperience);
 
+    const calculateDuration = (period) => {
+        if (!period) return '';
+
+        const [startStr, endStr] = period.split(' - ');
+        if (!startStr) return '';
+
+        const startDate = new Date(startStr);
+        const endDate = endStr === 'Present' ? new Date() : new Date(endStr);
+
+        if (isNaN(startDate.getTime()) || (endStr !== 'Present' && isNaN(endDate.getTime()))) {
+            return '';
+        }
+
+        let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+        // Add 1 to make it inclusive (e.g. Jan to Jan is 1 month)
+        months += 1;
+
+        if (months < 0) return '';
+
+        const years = Math.floor(months / 12);
+        const remainingMonths = months % 12;
+
+        let duration = '';
+        if (years > 0) {
+            duration += `${years} yr${years > 1 ? 's' : ''}`;
+        }
+        if (remainingMonths > 0) {
+            if (years > 0) duration += ' ';
+            duration += `${remainingMonths} mo${remainingMonths > 1 ? 's' : ''}`;
+        }
+
+        return duration ? ` • ${duration}` : '';
+    };
+
     return (
         <section className="section">
             <div className="container">
@@ -47,7 +81,7 @@ const Experience = () => {
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem', backgroundColor: 'rgba(255,255,255,0.05)', padding: '0.5rem 1rem', borderRadius: '2rem' }}>
                                     <Calendar size={16} />
-                                    <span>{job.period}</span>
+                                    <span>{job.period}{calculateDuration(job.period)}</span>
                                 </div>
                             </div>
 
