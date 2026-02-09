@@ -76,7 +76,7 @@ const Experience = () => {
                                     <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{job.role}</h3>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-primary)', fontWeight: '600' }}>
                                         <Briefcase size={18} />
-                                        <span>{job.company}</span>
+                                        <span>{job.company} | {job.location}</span>
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem', backgroundColor: 'rgba(255,255,255,0.05)', padding: '0.5rem 1rem', borderRadius: '2rem' }}>
