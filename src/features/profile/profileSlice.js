@@ -4,8 +4,8 @@ const initialState = {
   personalInfo: {
     name: "Neerali Jadav",
     title: "Software Developer",
-    bio: "I craft end-to-end solutions with 6+ years of experience building scalable applications and leading development teams.",
-    email: "ca.neeralijadav@gmail.com",
+    bio: "Architect of scalable web ecosystems and high-performing teams. Expertise in JavaScript/TypeScript with a passion for process optimisation. Whether it’s optimising backend architecture or leading a full-stack migration, I’m focused on delivering software that is as efficient as it is user-centric.",
+    email: "nj.neeralijadav@gmail.com",
     github: "https://github.com/N-Jadav",
     linkedin: "https://www.linkedin.com/in/neerali-jadav/",
     quotes: [
@@ -119,17 +119,6 @@ const initialState = {
     },
     {
       id: 3,
-      role: "Software Developer",
-      company: "Clik2pay",
-      location: "Toronto, Canada",
-      period: "Mar 2023 - Aug 2023",
-      description:
-        "Developed the user management functionality for merchants to add and delete users, which helped onboarding new clients that includes 407 ETR which in turn increased the revenue by 83%.",
-      technologies: ["React.js", "Node.js", "New Relic", "Network Security"],
-    },
-
-    {
-      id: 4,
       role: "Software Developer",
       company: "SHJ International",
       location: "Indore, India",

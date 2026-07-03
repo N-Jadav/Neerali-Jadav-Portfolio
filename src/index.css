@@ -1,14 +1,14 @@
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eff2f7;
+  --text-primary: #111827;
+  --text-secondary: #475569;
   --accent-primary: #3b82f6;
   --accent-secondary: #8b5cf6;
-  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
-  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #1955e2 100%);
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --font-main: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -60,7 +60,9 @@ button {
   border: 1px solid var(--card-border);
   border-radius: 1rem;
   padding: 2rem;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .card:hover {
@@ -126,8 +128,13 @@ button {
 
 .bg-grid {
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, rgba(17, 24, 39, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.05) 1px, transparent 1px);
   mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 40%,
+    transparent 100%
+  );
 }
